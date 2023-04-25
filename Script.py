@@ -187,18 +187,8 @@ Gʀᴏᴜᴘ = {}(<code>{}</code>)
 
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
-    CAPTION = """
-<b>📂 Fɪʟᴇ ɴᴀᴍᴇ : </b> <code>{file_name}</code>
-
-<b>
-╭─────── • ◆ • ───────╮
-🔅 𝓢𝓪𝓲 𝓜𝓸𝓿𝓲𝓮𝓼 :  <a href="https://t.me/addtheme/sai_movies27">Tᴏᴜᴄʜ</a>
-╰─────── • ◆ • ───────╯
-
-=========== • ✠ • ===========
-▫️ ᴄʜᴀɴɴᴇʟ : @sai_movies_update
-▫️ ɢʀᴏᴜᴘ : @sai_movies27
-=========== • ✠ • ===========</b>"""
+    CAPTION = """{file_name}\n\n <b>Join [𝓢𝓪𝓲 𝓜𝓸𝓿𝓲𝓮𝓼](https://t.me/Sai_Moviezz)</b>
+"""
 
     IMDB_TEMPLATE_TXT = """
 <b>Query: {query}
