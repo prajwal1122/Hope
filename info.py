@@ -18,7 +18,7 @@ API_HASH = environ.get('API_HASH','9544a3ad7d8660acbae0dcf553c808e5')
 BOT_TOKEN = environ.get('BOT_TOKEN', '6103626975:AAFrz1e1M4Jw63p0HfdMNe8MdWwWuJb0yKU')
 
 # Bot settings
-CACHE_TIME = int(environ.get('CACHE_TIME', 200))
+CACHE_TIME = int(environ.get('CACHE_TIME', 400))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
 PICS = (environ.get('PICS', 'https://telegra.ph/file/825eb0b9b48f4332e5271.jpg https://telegra.ph/file/b958949b16be1f0dd01a6.jpg https://telegra.ph/file/fe666659e64576db72b06.jpg https://telegra.ph/file/7d204c124a17df7e223fc.jpg https://telegra.ph/file/54ac56480944b69813426.png https://telegra.ph/file/5de1e88e4e322c81fe26f.jpg https://telegra.ph/file/8450338748ac577a7cdc5.jpg https://telegra.ph/file/e242c4a1af8f9b0a55164.jpg')).split()
@@ -55,7 +55,7 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 MAX_B_TN = environ.get("MAX_B_TN", "5")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/Sai_Moviezz')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/Sai_Moviezz_Update')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/Sai_Moviezz')
 MSG_ALRT = environ.get('MSG_ALRT', 'Wʜᴀᴛ Aʀᴇ Yᴏᴜ Lᴏᴏᴋɪɴɢ Aᴛ ?')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001815000407'))
