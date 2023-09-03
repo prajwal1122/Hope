@@ -18,7 +18,7 @@ API_HASH = environ.get('API_HASH','9544a3ad7d8660acbae0dcf553c808e5')
 BOT_TOKEN = environ.get('BOT_TOKEN', '6103626975:AAFrz1e1M4Jw63p0HfdMNe8MdWwWuJb0yKU')
 
 # Bot settings
-CACHE_TIME = int(environ.get('CACHE_TIME', 300))
+CACHE_TIME = int(environ.get('CACHE_TIME', 200))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
 PICS = (environ.get('PICS', 'https://telegra.ph/file/825eb0b9b48f4332e5271.jpg https://telegra.ph/file/b958949b16be1f0dd01a6.jpg https://telegra.ph/file/fe666659e64576db72b06.jpg https://telegra.ph/file/7d204c124a17df7e223fc.jpg https://telegra.ph/file/54ac56480944b69813426.png https://telegra.ph/file/5de1e88e4e322c81fe26f.jpg https://telegra.ph/file/8450338748ac577a7cdc5.jpg https://telegra.ph/file/e242c4a1af8f9b0a55164.jpg')).split()
@@ -28,10 +28,10 @@ SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/5e2d4418525832bc9a
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1966376217').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001843351268').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001843351268 -1001687768591').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '1966376217').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-auth_channel = environ.get('AUTH_CHANNEL', '-1001843351268')
+auth_channel = environ.get('AUTH_CHANNEL', '-1001687768591')
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
@@ -47,16 +47,16 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster1")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'test_files')
 
 # Others
-VERIFY = bool(environ.get('VERIFY', False))
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'shorturllink.in')
-SHORTLINK_API = environ.get('SHORTLINK_API', 'b9936c4bb0e1902d055496919ce071291ec01626')
+VERIFY = bool(environ.get('VERIFY', True))
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'omegalinks.in')
+SHORTLINK_API = environ.get('SHORTLINK_API', 'fdb5f1981cd3a8ed3ff568b5def3560c486a5b2d')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '-1001152304736').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "5")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/sai_movies27')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/sai_movies_update')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/Sai_Moviezz')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/Sai_Moviezz')
 MSG_ALRT = environ.get('MSG_ALRT', 'Wʜᴀᴛ Aʀᴇ Yᴏᴜ Lᴏᴏᴋɪɴɢ Aᴛ ?')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001815000407'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'SaiMovies_support_group')
